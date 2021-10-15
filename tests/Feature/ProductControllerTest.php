@@ -30,7 +30,7 @@ class ProductControllerTest extends TestCase
         $response
             ->assertSuccessful()
             ->assertHeader('content-type', 'application/json')
-            ->assertJsonCount(5);
+            ->assertJsonCount(5,'data');
 /*
         factory(Product::class, 5)->create();
 
